@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>HelloFriend</artifactId>
+	<name>HelloFriend</name>
+	<parent>
+		<groupId>com.quinntian.maven</groupId>
+		<artifactId>Parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../Parent/pom.xml</relativePath>
+	</parent>
+	<properties>
+		<!-- 统一声明版本号 -->
+		<quinntian.version>4.0.1.RELEASE</quinntian.version>
+
+	</properties>
+	<dependencies>
+
+		<dependency>
+			<groupId>com.quinntian.maven</groupId>
+			<artifactId>Hello</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${quinntian.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
